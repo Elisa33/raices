@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Raices Urbanas</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link  rel="icon"   href="img/favicon.png" type="image/png" />
+	<link rel="stylesheet" href="raices.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+
+		$(function(){
+			$('#abrir').click(abrirOverlay)
+			$('.overlay button').click(cerrarOverlay)
+		})
+		
+		function abrirOverlay(){
+			$('.overlay').slideDown()
+		}
+
+		function cerrarOverlay(){
+			$('.overlay').slideUp()
+		}
+	</script>
+</head>
+
+<body>
+	<header>
+		<a href="#raices" class="logo"></a>
+		<nav>
+			<a href="#raices">Nuestras raíces</a>
+			<a href="#talleres">Talleres</a>
+			<a href="#productos">Productos</a>
+			<a href="#contacto">Contacto</a>
+			<a href="facebook" class="facebook"></a>
+			<a href="instagram" class="instagram"></a>
+		</nav>
+	</header>
+
+
+
+<section id="slider">
+		
+		<h1>Raices Urbanas</h1>
+		<h3>Un paraíso entre tanto cemento</h3>
+
+		<div class="slide">
+			<ul>
+				<li><img src="img/slider1" alt="" id="slide1"></li>
+				<li><img src="img/slide2" alt="" id="slide2"></li>
+				<li><img src="img/slide3" alt="" id="slide3"></li>
+				<li><img src="img/slide4" alt="" id="slide4"></li>
+				<li><img src="img/slide5" alt="" id="slide5"></li>
+			</ul>
+		</div>
+
+	</section>
+
+<main>
+	<section id="raices">
+		<h2>Nuestras Raices</h2>
+		<p>Si miramos a nuestro alrededor veremos cemento, edificios, vehículos y polución, producto de una ciudad que crece cada día más. Pero en una terraza de Almagro surge un nuevo paradigma, donde se sienten los aires de cambio de sólo transitar entre los canteros y plantas, que se fortalecen dentro de un ecosistema diferente, generado por la biodiversidad del lugar.</p>
+		<div class="pilares">
+			<div class="agroecologia">
+				<img src="img/icon-01.png" alt="">
+				<h2>Agroecología</h2>
+				<p>¿Quién dijo que en las ciudades no se pueden producir alimentos de forma sana, segura y soberana? Retomamos los saberes ancestrales para pensar en una agricultura respetuosa con el ambiente que fomente la biodiversidad, conserve el agua y mejore la fertilidad del suelo y la salud de las plantas. La agroecología nos invita a cuestionar nuestros hábitos y la forma en la que nos vinculamos con el ambiente.</p>
+			</div>
+			<div class="desarrollosust"><img src="img/icon-02.png" alt="">
+				<h2>Desarrollo Sustentable</h2>
+				<p>¿Quién dijo que en las ciudades no se pueden producir alimentos de forma sana, segura y soberana? Retomamos los saberes ancestrales para pensar en una agricultura respetuosa con el ambiente que fomente la biodiversidad, conserve el agua y mejore la fertilidad del suelo y la salud de las plantas. La agroecología nos invita a cuestionar nuestros hábitos y la forma en la que nos vinculamos con el ambiente.</p></div>
+			<div class="edambiental"><img src="img/icon-03.png" alt="">
+				<h2>Educacion Ambiental</h2>
+				<p>¿Quién dijo que en las ciudades no se pueden producir alimentos de forma sana, segura y soberana? Retomamos los saberes ancestrales para pensar en una agricultura respetuosa con el ambiente que fomente la biodiversidad, conserve el agua y mejore la fertilidad del suelo y la salud de las plantas. La agroecología nos invita a cuestionar nuestros hábitos y la forma en la que nos vinculamos con el ambiente.</p></div>
+		</div>
+	</section>
+
+	<section id="talleres">
+		<h2>Talleres</h2>
+		<div class="contenedor">
+			<div id="intro"><h3>Intro A a la Huerta</h3></div>
+			<div id="brotes"><h3>Brotes de Cambio</h3></div>
+			<div id="compost"><h3>Compost y Lombirado</h3></div>
+			<div id="pmedicinales">Plantas Medicinales</div>
+			<div id="plagas"><h3>Control de plagas</h3></div>
+			<div id="hidroponia"><h3>Hidroponia</h3></div>
+			<div id="docente"><h3>Capacitación docente</h3></div>
+		</div>
+
+		<div class="overlay">Este es mi overlay
+		<button>CERRAR</button>
+		</div>
+
+	<button  id="abrir">Abrir overlay</button>
+	</section>
+
+	<section id="productos">
+		<h2>Productos</h2>
+		<div class="contenedor">
+			<div class='circulo'id="huerta">Huerta</div>
+			<div class='circulo'id="medicinales">Medicinales</div>
+			<div class='circulo'id="aromaticas">Aromáticas</div>
+			<div class='circulo'id="semillas">Semillas</div>
+
+		
+	</section>
+
+	<section id="tips">
+
+		<article>
+			<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat illum tempora eveniet doloremque, iste voluptas delectus magni iure, at cumque provident hic fugiat rem, corrupti quaerat saepe facilis ratione dolor.</p>
+		
+		</article>
+	</section>
+
+	<section id="contacto">
+		<h2>Contacto</h2>
+
+		<form action="formulario.php" method="post">
+			
+			<input type="text" placeholder="Nombre">
+			<input type="email" placeholder="Mail">
+			<datalist id="opcion">
+
+				<option value="Ser voluntario">
+				<option value="Comprar plantines">
+				<option value="Conocer la huerta">
+				<option value="Inscribirme a un taller">
+				<option value="Otro motivo">
+				
+			</datalist>
+			<input list="opcion" placeholder="Quiero...">
+
+			<textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+			<input type="submit">
+
+		</form>
+
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13135.564851246776!2d-58.417872!3d-34.6069123!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa05a81686d04fcfc!2sRaices%20Urbanas!5e0!3m2!1ses-419!2sar!4v1590091882779!5m2!1ses-419!2sar" allowfullscreen=""></iframe>
+
+	</section>
+</main>
+<footer>Footer</footer>
+	
+
+
+	
+</body>
+</html>
