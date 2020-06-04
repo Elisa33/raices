@@ -2,20 +2,17 @@
 
 * {
   margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  color: #888888;
 }
 
 body{
 	color: #888;
 	font-size: 14px;
-	background: #F8FFF2;
+  background: #F8FFF2;
+  scroll-behavior: smooth;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #888888;
 }
 
 main {
@@ -68,15 +65,24 @@ header {
   left: 0;
   margin-right: auto;
   margin-left: auto;
-  min-height: 8em;
+  min-height: 8em;x
+  z-index: 1;
+  display: flex;
+}
+
+.menu{
   width: 70%;
-  /*background-color: rgba(74, 112, 46,0.5);*/
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
 
-  z-index: 1;
+.verde{
+  width: 100%;
+  background-color: rgba(74, 112, 46,0.8);
+
 }
 nav {
   width: 50%;
@@ -95,7 +101,7 @@ nav a {
 .logo {
   width: 130px;
   height: 60px;
-  background: url(img/logo.png);
+  background: url(../img/logo.png);
   background-repeat: no-repeat;
   -webkit-background-size: contain;
   background-size: contain;
@@ -103,7 +109,7 @@ nav a {
 .facebook {
   width: 15px;
   display: inline-block;
-  background-image: url(img/facebook.png);
+  background-image: url(../img/facebook.png);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: contain;
@@ -112,7 +118,7 @@ nav a {
 .instagram {
   width: 15px;
   display: inline-block;
-  background-image: url(img/instagram.png);
+  background-image: url(../img/instagram.png);
   background-repeat: no-repeat;
   background-position: center;
   -webkit-background-size: contain;
@@ -122,7 +128,7 @@ nav a {
 
 #slider{
   width: 100%;
-  background: rgb(137, 201, 91) url(img/slider3.jpg);
+  background: rgb(137, 201, 91) url(../img/slider3.jpg);
   background-blend-mode: multiply;
   height: 500px;
 	-webkit-background-size: cover;
@@ -193,7 +199,7 @@ nav a {
 	width: 30%;
 	min-width: 80px;
 	align-self: center;
-/*background: green url(img/icon-01.png);*/
+/*background: green url(../img/icon-01.png);*/
 }
 
 
@@ -253,21 +259,21 @@ nav a {
 
 
 #intro {
-  background: green url(img/intro.jpg);
+  background: green url(../img/intro.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
 }
 #brotes {
-  background: green url(img/brotes.jpg);
+  background: green url(../img/brotes.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
 }
 #compost {
-  background: green url(img/compost.jpg);
+  background: green url(../img/compost.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -275,14 +281,14 @@ nav a {
 
 }
 #pmedicinales {
-  background: green url(img/pmedicinales.jpg);
+  background: green url(../img/pmedicinales.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
 }
 #plagas {
-  background: green url(img/plagas.jpg);
+  background: green url(../img/plagas.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -290,14 +296,14 @@ nav a {
 
 }
 #hidroponia {
-  background: green url(img/hidroponia.jpg);
+  background: green url(../img/hidroponia.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
 }
 #docente {
-  background: green url(img/docente.jpg);
+  background: green url(../img/docente.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -311,28 +317,28 @@ nav a {
 /*--------------Productos huerta---------------*/
 
 #medicinales {
-  background: green url(img/medicinales.jpg);
+  background: green url(../img/medicinales.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
 }
 #huerta {
-  background: green url(img/huerta.jpg);
+  background: green url(../img/huerta.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
 }
 #semillas {
-  background: green url(img/semillas.jpg);
+  background: green url(../img/semillas.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
   background-position: center;
 }
 #aromaticas {
-  background: green url(img/aromaticas.jpg);
+  background: green url(../img/aromaticas.jpg);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;

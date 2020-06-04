@@ -5,29 +5,18 @@
 	<title>Raices Urbanas</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link  rel="icon"   href="img/favicon.png" type="image/png" />
-	<link rel="stylesheet" href="raices.css">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="css/raices.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script>
 
-		$(function(){
-			$('#abrir').click(abrirOverlay)
-			$('.overlay button').click(cerrarOverlay)
-		})
-		
-		function abrirOverlay(){
-			$('.overlay').slideDown()
-		}
-
-		function cerrarOverlay(){
-			$('.overlay').slideUp()
-		}
-	</script>
+	<script src="js/script.js"></script>
 </head>
 
 <body>
 	<header>
-		<a href="#raices" class="logo"></a>
+		<div class="menu">
+			<a href="#raices" class="logo"></a>
 		<nav>
 			<a href="#raices">Nuestras raíces</a>
 			<a href="#talleres">Talleres</a>
@@ -36,15 +25,24 @@
 			<a href="facebook" class="facebook"></a>
 			<a href="instagram" class="instagram"></a>
 		</nav>
+
+		</div>
+		
 	</header>
 
 
 
 <section id="slider">
-		
-		<h1>Raices Urbanas</h1>
-		<h3>Un paraíso entre tanto cemento</h3>
+	<div class="contenido-slider">
+		<h1>Manos a la tierra</h1>
+		<p>Animate a ser parte del mundo huertero y viví la experiencia de cultivar tus propios alimentos. Te brindamos asesoramiento y seguimiento según las condiciones de tu espacio y posibilidades.
+			¡Consulta por nuestra variedad de plantines y semillas!
+		</p>
+		<div class="btn">escribinos aquí</div>
+	</div>
 
+	<!--
+		
 		<div class="slide">
 			<ul>
 				<li><img src="img/slider1" alt="" id="slide1"></li>
@@ -53,7 +51,7 @@
 				<li><img src="img/slide4" alt="" id="slide4"></li>
 				<li><img src="img/slide5" alt="" id="slide5"></li>
 			</ul>
-		</div>
+		</div>-->
 
 	</section>
 
@@ -64,14 +62,14 @@
 		<div class="pilares">
 			<div class="agroecologia">
 				<img src="img/icon-01.png" alt="">
-				<h2>Agroecología</h2>
+				<h4>Agroecología</h4>
 				<p>¿Quién dijo que en las ciudades no se pueden producir alimentos de forma sana, segura y soberana? Retomamos los saberes ancestrales para pensar en una agricultura respetuosa con el ambiente que fomente la biodiversidad, conserve el agua y mejore la fertilidad del suelo y la salud de las plantas. La agroecología nos invita a cuestionar nuestros hábitos y la forma en la que nos vinculamos con el ambiente.</p>
 			</div>
 			<div class="desarrollosust"><img src="img/icon-02.png" alt="">
-				<h2>Desarrollo Sustentable</h2>
+				<h4>Desarrollo Sustentable</h4>
 				<p>¿Quién dijo que en las ciudades no se pueden producir alimentos de forma sana, segura y soberana? Retomamos los saberes ancestrales para pensar en una agricultura respetuosa con el ambiente que fomente la biodiversidad, conserve el agua y mejore la fertilidad del suelo y la salud de las plantas. La agroecología nos invita a cuestionar nuestros hábitos y la forma en la que nos vinculamos con el ambiente.</p></div>
 			<div class="edambiental"><img src="img/icon-03.png" alt="">
-				<h2>Educacion Ambiental</h2>
+				<h4>Educacion Ambiental</h4>
 				<p>¿Quién dijo que en las ciudades no se pueden producir alimentos de forma sana, segura y soberana? Retomamos los saberes ancestrales para pensar en una agricultura respetuosa con el ambiente que fomente la biodiversidad, conserve el agua y mejore la fertilidad del suelo y la salud de las plantas. La agroecología nos invita a cuestionar nuestros hábitos y la forma en la que nos vinculamos con el ambiente.</p></div>
 		</div>
 	</section>
@@ -79,10 +77,12 @@
 	<section id="talleres">
 		<h2>Talleres</h2>
 		<div class="contenedor">
-			<div id="intro"><h3>Intro A a la Huerta</h3></div>
+			<div id="intro"><h3>Intro A a la Huerta</h3><p>Clases teórico prácticas con todo lo que tenés que saber para iniciar una huerta en tu patio, terraza, balcón o jardín. Dónde, cómo y qué sembrar según el espacio que tengas y los materiales con los que cuentes. ¡Lo único que necesitas es creatividad!  
+			</p></div>
 			<div id="brotes"><h3>Brotes de Cambio</h3></div>
-			<div id="compost"><h3>Compost y Lombirado</h3></div>
-			<div id="pmedicinales">Plantas Medicinales</div>
+			<div id="compost"><h3>Compost y Lombricado</h3><p>¿Querés sumarte a este mundo de apasionadxs por el compost? No sólo ayuda a reducir tus residuos sino que además obtenés abono fértil para tus plantas. Te enseñamos cómo y dónde hacerlo para no fallar en el intento.
+			</p></div>
+			<div id="pmedicinales"><h3>Plantas Medicinales</h3></div>
 			<div id="plagas"><h3>Control de plagas</h3></div>
 			<div id="hidroponia"><h3>Hidroponia</h3></div>
 			<div id="docente"><h3>Capacitación docente</h3></div>
@@ -98,10 +98,10 @@
 	<section id="productos">
 		<h2>Productos</h2>
 		<div class="contenedor">
-			<div class='circulo'id="huerta">Huerta</div>
-			<div class='circulo'id="medicinales">Medicinales</div>
-			<div class='circulo'id="aromaticas">Aromáticas</div>
-			<div class='circulo'id="semillas">Semillas</div>
+			<div class='circulo'id="huerta"><h3>Huerta</h3></div>
+			<div class='circulo'id="medicinales"><h3>Medicinales</h3></div>
+			<div class='circulo'id="aromaticas"><h3>Aromáticas</h3></div>
+			<div class='circulo'id="semillas"><h3>Semillas</h3></div>
 
 		
 	</section>
@@ -117,28 +117,34 @@
 	<section id="contacto">
 		<h2>Contacto</h2>
 
-		<form action="formulario.php" method="post">
+		<div class="contenedor-contacto">
+			<form action="formulario.php" method="post">
 			
-			<input type="text" placeholder="Nombre">
-			<input type="email" placeholder="Mail">
-			<datalist id="opcion">
+				<input type="text" placeholder="Nombre">
+				<input type="email" placeholder="Mail">
+				<datalist id="opcion">
+	
+					<option value="Ser voluntario">
+					<option value="Comprar plantines">
+					<option value="Conocer la huerta">
+					<option value="Inscribirme a un taller">
+					<option value="Otro motivo">
+					
+				</datalist>
+				<input list="opcion" placeholder="Quiero...">
+	
+				<textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+				<input type="submit">
+	
+			</form>
+	
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13135.564851246776!2d-58.417872!3d-34.6069123!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa05a81686d04fcfc!2sRaices%20Urbanas!5e0!3m2!1ses-419!2sar!4v1590091882779!5m2!1ses-419!2sar" allowfullscreen=""></iframe>
+	
 
-				<option value="Ser voluntario">
-				<option value="Comprar plantines">
-				<option value="Conocer la huerta">
-				<option value="Inscribirme a un taller">
-				<option value="Otro motivo">
-				
-			</datalist>
-			<input list="opcion" placeholder="Quiero...">
 
-			<textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-			<input type="submit">
+		</div>
 
-		</form>
-
-		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13135.564851246776!2d-58.417872!3d-34.6069123!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa05a81686d04fcfc!2sRaices%20Urbanas!5e0!3m2!1ses-419!2sar!4v1590091882779!5m2!1ses-419!2sar" allowfullscreen=""></iframe>
-
+		
 	</section>
 </main>
 <footer>Footer</footer>
