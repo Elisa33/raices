@@ -65,8 +65,7 @@ header {
   left: 0;
   margin-right: auto;
   margin-left: auto;
-  min-height: 8em;x
-  z-index: 1;
+  min-height: 6em;
   display: flex;
 }
 
@@ -81,14 +80,16 @@ header {
 
 .verde{
   width: 100%;
-  background-color: rgba(74, 112, 46,0.8);
-
+  background-color: rgba(74, 112, 46,1);
+  transition: all 2s;
+  z-index: 999;
 }
 nav {
   width: 50%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 nav a {
   text-decoration: none;
@@ -107,7 +108,6 @@ nav a {
   background-size: contain;
 }
 .facebook {
-  width: 15px;
   display: inline-block;
   background-image: url(../img/facebook.png);
   background-repeat: no-repeat;
@@ -116,7 +116,6 @@ nav a {
   background-size: contain;
 }
 .instagram {
-  width: 15px;
   display: inline-block;
   background-image: url(../img/instagram.png);
   background-repeat: no-repeat;
@@ -214,13 +213,9 @@ nav a {
 }
 .contenedor div {
   width: 250px;
-  min-height: 250px;
+  height: 250px;
   border-radius: 10%;
   margin: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 
 }
@@ -231,7 +226,8 @@ nav a {
 
 .contenedor h3{
   position: relative;
-  top:40%;
+  top:50%;
+  transform: translateY(-50%);
 }
 
 .contenedor p {
@@ -241,7 +237,7 @@ nav a {
   font-size: small;
   color: #fff;
   position: relative;
-  top: 100%;
+  top: 250px;
   padding: 15px;
 }
 
@@ -395,10 +391,21 @@ datalist {
   margin-bottom: 10px;
   border: 1px solid #dddddd;
   border-radius: 5px;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
 }
 
 textarea{
+  width: 450px;
   height: 115px;
+}
+
+input[type=submit]{
+  width: 450px;;
 }
 
 
@@ -433,6 +440,34 @@ footer{
   nav a {
     font-size: 0.7em;
   }
+  section{
+    width: 80%;
+  }
+  .contenido-slider p{
+    width: 80%;
+  }
+
+  .contenedor-contacto{
+    width: 100%;
+    flex-direction: column;
+  }
+  form{
+    width: 100%;
+  }
+
+  form input {
+    width: 100%;
+  }
+  form textarea{
+    width: 100%;
+  }
+  input[type=submit]{
+    width: 100%;
+  }
+
+  iframe{
+    width: 100%;
+  }
 }
 /* Móviles en vertical
 --------------------------------------- */
@@ -441,4 +476,44 @@ footer{
   nav {
     display: none;
   }
+
+  section{
+    width: 90%;
+  }
+  .contenido-slider p{
+    
+    line-height: 1.2em;
+    
+  }
+  .pilares{
+    flex-direction: column;
+  }
+
+  .pilares div{
+    width: 100%;
+  }
+
+  .contenedor-contacto{
+    width: 100%;
+    flex-direction: column;
+  }
+  form{
+    width: 100%;
+  }
+
+  form input {
+    width: 100%;
+  }
+  form textarea{
+    width: 100%;
+  }
+  input[type=submit]{
+    width: 100%;
+  }
+
+  iframe{
+    width: 100%;
+  }
+
+
 }
