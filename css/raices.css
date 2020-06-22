@@ -3,6 +3,7 @@
 * {
   margin: 0;
   scroll-behavior: smooth;
+  box-sizing: border-box;
 }
 
 body{
@@ -201,6 +202,7 @@ nav a {
 /*background: green url(../img/icon-01.png);*/
 }
 
+/*-----Talleres-----*/
 
 .contenedor {
   width: 100%;
@@ -431,20 +433,45 @@ footer{
 --------------------------------------- */
 
 @media (max-width: 767px) {
+  body{
+    font-size: 16px;
+  }
   header {
+    padding: 20px 0;
+    height: 8em;
+  }
+  .contenido-slider{
+    width: 85%;
+  }
+  .menu{
+    width: 85%;
     flex-direction: column;
   }
   nav {
-    width: 70%;
+    width: 100%;
   }
   nav a {
-    font-size: 0.7em;
+    font-size: 1em;
   }
   section{
-    width: 80%;
+    width: 85%;
   }
   .contenido-slider p{
     width: 80%;
+  }
+  #raices{
+    font-size: 1em;
+  }
+
+  .pilares{
+    flex-direction: column;
+  }
+
+  .pilares div{
+    width: 100%;
+  }
+  .pilares img{
+    width: 25%;
   }
 
   .contenedor-contacto{

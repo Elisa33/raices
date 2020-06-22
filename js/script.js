@@ -11,18 +11,3 @@ $(document).ready(function(){
     });
 });
 
-
-
-
-    $(function(){
-        $('#abrir').click(abrirOverlay)
-        $('.overlay button').click(cerrarOverlay)
-    })
-    
-    function abrirOverlay(){
-        $('.overlay').slideDown()
-    }
-
-    function cerrarOverlay(){
-        $('.overlay').slideUp()
-    }
