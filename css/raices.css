@@ -308,8 +308,21 @@ nav a {
   border-radius: 50%;
   overflow: hidden;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.mas{
+  font-size: 2em;
+  text-decoration: none;
+  color: #fff;
+
+}
+
+.mas:hover{
+  font-size: 3em;
+  font-weight: 400;
 }
 
 
@@ -342,21 +355,6 @@ nav a {
   background-position: center;
 }
 
-input[type=submit]{
-  color: #fff;
-  width: 100%;
-  border: none;
-  background: #63983C;
-}
-
-iframe {
-  width: 50%;
-  border-radius: 15px;
-  border: 1px solid #cccccc;
-}
-
-
-
 /*Section Contacto*/
 
 .contenedor-contacto{
@@ -370,9 +368,7 @@ form {
   display: flex;
   flex-direction: column;
 }
-iframe{
-  width: 50%;
-}
+
 form input,
 textarea,
 datalist {
@@ -396,7 +392,16 @@ textarea{
 }
 
 input[type=submit]{
-  width: 100%;;
+  color: #fff;
+  width: 100%;
+  border: none;
+  background: #63983C;
+}
+
+iframe {
+  width: 50%;
+  border-radius: 15px;
+  border: 1px solid #cccccc;
 }
 
 
